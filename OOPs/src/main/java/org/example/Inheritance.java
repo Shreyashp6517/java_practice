@@ -20,6 +20,24 @@ class Moped extends Bike{
     }
 }
 
+//hierarchical Inheritance
+
+class Car  extends Vehical{
+    public void wheels(int w)
+    {
+        System.out.println("No. of wheels "+w);
+    }
+}
+
+// Hybrid Inheritance
+
+class Maruti extends Car{
+    public void power(int p)
+    {
+        System.out.println("It has "+ p+" bhp");
+    }
+}
+
 public class Inheritance {
     public static void main(String[] args){
         Bike b1 = new Bike();
@@ -30,6 +48,14 @@ public class Inheritance {
         by1.enginestart();
         by1.wheels(2);
         by1.Hasmotor();
+
+        Car c1 = new Car();
+        c1.enginestart();
+        c1.wheels(4);
+        Maruti m1 =new Maruti();
+        m1.enginestart();
+        m1.wheels(4);
+        m1.power(800);
     }
 
 }

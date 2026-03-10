@@ -2,7 +2,7 @@
 import java.util.*;
 public class ArrayListEx {
     public static void main(String[] args){
-        List<Integer> arr = new ArrayList<>();
+        ArrayList<Integer> arr = new ArrayList<>();
 
         arr.add(1);
         arr.add(2);

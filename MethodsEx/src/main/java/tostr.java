@@ -19,7 +19,7 @@ class Car{
 }
 public class tostr {
     public static void main(String[] args){
-        Car c1 = new Car("Ford","Endevor",2020,"SVU");
+        Car c1 = new Car("Ford","Endeavor",2020,"SVU");
 
         System.out.println(c1);
     }

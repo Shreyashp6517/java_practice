@@ -13,11 +13,11 @@ class Student {
     public boolean equals(Object obj)
     {
         Student s = (Student)obj;
-        return this.id==s.id;
+        return this.id==s.id && this.name.equals(s.name);
     }
 
     public int hashCode(){
-        return Objects.hash(id);
+        return Objects.hash(id,name);
     }
 }
 
@@ -25,7 +25,7 @@ public class HashCodeEx {
     public static void main(String[] args){
         HashSet<Student> set =new HashSet<>();
         Student s1 =new Student(1,"Shreyash");
-        Student s2 =new Student(1,"Shreyash");
+        Student s2 =new Student(1,"Patil");
 
         System.out.println(set.add(s1));
         System.out.println(set.add(s2));
